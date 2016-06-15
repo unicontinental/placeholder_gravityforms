@@ -4,7 +4,7 @@ Plugin Name: Enable Gravity Forms Placeholders
 Plugin URI: http://oc.continental.edu.pe
 Description: Enable placeholders in Gravity Forms
 Version: 0.1.1
-Author: Oficina de Comunicaciones de la Corporación Educativa continental
+Author: Oficina de Comunicaciones de la Corporacion Educativa continental
 Author URI: http://oc.continental.edu.pe
 Instructions: Active plugin.
 */

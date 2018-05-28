@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Enable Placeholders, Tabindex Conflicts
-Plugin URI: http://oc.continental.edu.pe
+Plugin URI: https://github.com/unicontinental/placeholder_gravityforms
 Description: Enable placeholders in Gravity Forms and Fix Gravity Form Tabindex Conflicts
 Version: 0.2
 Author: Oficina de Comunicaciones de la Corporacion Educativa continental
-Author URI: http://oc.continental.edu.pe
+Author URI: https://github.com/unicontinental/placeholder_gravityforms
 Instructions: Active plugin.
 */
 

@@ -13,7 +13,7 @@ if (class_exists('GFForms')) {
 	/**
 	* Enable Gravity Forms Placeholders
 	*/
-    add_filter( 'gform_enable_field_label_visibility_settings', '__return_true' );
+	add_filter( 'gform_enable_field_label_visibility_settings', '__return_true' );
 
 	/**
 	 * Fix Gravity Form Tabindex Conflicts
@@ -26,4 +26,8 @@ if (class_exists('GFForms')) {
 	        add_filter( 'gform_tabindex_' . $form['id'], 'gform_tabindexer' );
 	    return GFCommon::$tab_index >= $starting_index ? GFCommon::$tab_index : $starting_index;
 	}
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes

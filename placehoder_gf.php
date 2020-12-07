@@ -3,8 +3,8 @@
 Plugin Name: Enable Placeholders, Tabindex Conflicts
 Plugin URI: https://github.com/unicontinental/placeholder_gravityforms
 Description: Enable placeholders in Gravity Forms and Fix Gravity Form Tabindex Conflicts
-Version: 0.2
-Author: Oficina de Comunicaciones de la Corporacion Educativa continental
+Version: 0.2.0.1
+Author: Oficina de Comunicaciones de la Corporación Educativa Continental
 Author URI: https://github.com/unicontinental/placeholder_gravityforms
 Instructions: Active plugin.
 */

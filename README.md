@@ -4,9 +4,9 @@
 **Plugin URI:** https://github.com/unicontinental/placeholder_gravityforms
 **Tags:** gravity forms, gravityforms, placeholder, tabindex, accessibility, form
 **Requires at least:** WordPress 4.3 (originally tested on this version)
-**Tested up to:** WordPress 4.3 (original test environment)
+**Tested up to:** WordPress 4.3 (original test environment, plugin updated to v0.3.0)
 **Requires PHP:** 5.6 (assumed reasonable minimum)
-**Stable tag:** 0.2.0.2
+**Stable tag:** 0.3.0
 **License:** GPLv2 or later
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -62,12 +62,26 @@ This feature works automatically once the plugin is activated. No further config
 ## Frequently Asked Questions
 
 **Q: Does this plugin work with the latest version of Gravity Forms?**
-A: This plugin was originally built to enable placeholder functionality that became more robust around Gravity Forms v1.9.1+. The tabindex fix is generally compatible. While it was last updated based on plugin version 0.2.0.2, it uses standard Gravity Forms hooks that should maintain compatibility. However, always test in a staging environment with the latest versions.
+A: This plugin was originally built to enable placeholder functionality that became more robust around Gravity Forms v1.9.1+. The tabindex fix is generally compatible. It uses standard Gravity Forms hooks that should maintain compatibility. However, always test in a staging environment with the latest versions. (Plugin version 0.3.0)
 
 **Q: Can I change the starting tabindex value?**
-A: Currently, the starting tabindex value of 1000 is hardcoded in the plugin. To change it, you would need to modify the plugin's PHP file (`placeholder_gf.php`) directly.
+A: Yes, as of version 0.3.0. The plugin now includes a filter `pgf_tabindex_start_index` that allows you to change the default starting tabindex value of 1000. You can add code to your theme's `functions.php` file or a custom plugin like this:
+   ```php
+   add_filter( 'pgf_tabindex_start_index', 'custom_tabindex_start' );
+   function custom_tabindex_start( $default_start_index ) {
+       // Change the starting tabindex to 2000, for example
+       return 2000;
+   }
+   ```
 
 ## Changelog
+
+### 0.3.0
+*   Enhanced: Added a filter `pgf_tabindex_start_index` to allow developers to customize the starting tabindex value.
+*   Enhanced: Prefixed internal function `gform_tabindexer` to `pgf_gform_tabindexer` to prevent potential naming conflicts.
+*   Maintenance: Updated plugin header information (Version, License, Text Domain, Instructions).
+*   Maintenance: Added standard WordPress security check (`ABSPATH`).
+*   Maintenance: Improved PHPDoc blocks and inline comments for better code clarity.
 
 ### 0.2.0.2
 *   Initial version providing placeholder enablement and tabindex conflict resolution.
